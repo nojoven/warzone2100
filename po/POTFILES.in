@@ -151,8 +151,8 @@ data/mp/multiplay/skirmish/bonecrusher/functions.js
 data/mp/multiplay/skirmish/bonecrusher/names.js
 data/mp/multiplay/skirmish/bonecrusher/performance.js
 data/mp/multiplay/skirmish/bonecrusher/produce.js
-data/mp/multiplay/skirmish/bonecrusher/research.js
 data/mp/multiplay/skirmish/bonecrusher/research-paths.js
+data/mp/multiplay/skirmish/bonecrusher/research.js
 data/mp/multiplay/skirmish/bonecrusher/targeting.js
 data/mp/multiplay/skirmish/bonecrusher/tech.js
 data/mp/multiplay/skirmish/bonecrusher/weap-init.js
@@ -231,6 +231,7 @@ lib/framework/frameresource.cpp
 lib/framework/geometry.cpp
 lib/framework/i18n.cpp
 lib/framework/lexer_input.cpp
+lib/framework/physfs_ext.cpp
 lib/framework/stdio_ext.cpp
 lib/framework/strres.cpp
 lib/framework/treap.cpp
@@ -239,6 +240,7 @@ lib/framework/utf.cpp
 lib/framework/wzconfig.cpp
 lib/framework/wzpaths.cpp
 lib/framework/wzstring.cpp
+lib/framework/wztime.cpp
 lib/gamelib/gtime.cpp
 lib/ivis_opengl/3rdparty/stb_image_resize.cpp
 lib/ivis_opengl/3rdparty/vk_mem_alloc.cpp
@@ -247,6 +249,7 @@ lib/ivis_opengl/3rdparty/vkh_renderpasscompat.cpp
 lib/ivis_opengl/bitimage.cpp
 lib/ivis_opengl/gfx_api.cpp
 lib/ivis_opengl/gfx_api_gl.cpp
+lib/ivis_opengl/gfx_api_null.cpp
 lib/ivis_opengl/gfx_api_vk.cpp
 lib/ivis_opengl/imdload.cpp
 lib/ivis_opengl/jpeg_encoder.cpp
@@ -270,6 +273,7 @@ lib/netplay/netsocket.cpp
 lib/netplay/nettypes.cpp
 lib/sdl/cursors_sdl.cpp
 lib/sdl/gfx_api_gl_sdl.cpp
+lib/sdl/gfx_api_null_sdl.cpp
 lib/sdl/gfx_api_sdl.cpp
 lib/sdl/gfx_api_vk_sdl.cpp
 lib/sdl/main_sdl.cpp
@@ -287,13 +291,18 @@ lib/sound/track.cpp
 lib/widget/bar.cpp
 lib/widget/button.cpp
 lib/widget/cliprect.cpp
+lib/widget/dropdown.cpp
 lib/widget/editbox.cpp
 lib/widget/form.cpp
+lib/widget/jsontable.cpp
 lib/widget/label.cpp
 lib/widget/listwidget.cpp
+lib/widget/multibutform.cpp
+lib/widget/paragraph.cpp
 lib/widget/scrollablelist.cpp
 lib/widget/scrollbar.cpp
 lib/widget/slider.cpp
+lib/widget/table.cpp
 lib/widget/tip.cpp
 lib/widget/widget.cpp
 po/custom/fromJson.txt
@@ -311,6 +320,7 @@ src/aud.cpp
 src/baseobject.cpp
 src/bucket3d.cpp
 src/challenge.cpp
+src/chat.cpp
 src/cheat.cpp
 src/clparse.cpp
 src/cmddroid.cpp
@@ -326,6 +336,7 @@ src/display3d.cpp
 src/droid.cpp
 src/edit3d.cpp
 src/effects.cpp
+src/faction.cpp
 src/feature.cpp
 src/fpath.cpp
 src/frontend.cpp
@@ -334,6 +345,11 @@ src/gateway.cpp
 src/geometry.cpp
 src/group.cpp
 src/hci.cpp
+src/hci/build.cpp
+src/hci/commander.cpp
+src/hci/manufacture.cpp
+src/hci/objects_stats.cpp
+src/hci/research.cpp
 src/ingameop.cpp
 src/init.cpp
 src/intdisplay.cpp
@@ -369,6 +385,7 @@ src/multiplay.cpp
 src/multistat.cpp
 src/multistruct.cpp
 src/multisync.cpp
+src/musicmanager.cpp
 src/nethelpers.cpp
 src/notifications.cpp
 src/objects.cpp
@@ -409,4 +426,6 @@ src/warcam.cpp
 src/warzoneconfig.cpp
 src/wavecast.cpp
 src/wrappers.cpp
+src/wzapi.cpp
 src/wzpropertyproviders.cpp
+src/wzscriptdebug.cpp
